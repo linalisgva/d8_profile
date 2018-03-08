@@ -1,0 +1,14 @@
+uuid: 14223344-aca0-4b16-be60-e07e8aa05628
+langcode: en
+status: false
+dependencies: {  }
+id: production
+label: production
+folder: ../config/env/production/
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

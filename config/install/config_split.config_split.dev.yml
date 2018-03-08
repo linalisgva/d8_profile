@@ -1,0 +1,18 @@
+uuid: fb6ff184-e98d-4604-9bf6-753c0da802c3
+langcode: en
+status: true
+dependencies: {  }
+id: dev
+label: dev
+folder: ../config/env/dev/
+module:
+  devel: 0
+  twig_vardumper: 0
+theme: {  }
+blacklist:
+  - system.performance
+  - devel
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

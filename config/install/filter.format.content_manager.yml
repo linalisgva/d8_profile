@@ -1,0 +1,8 @@
+uuid: 96f8470a-0a68-477e-a92c-63350b4abc68
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Content manager'
+format: content_manager
+weight: 0
+filters: {  }

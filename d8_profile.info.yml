@@ -1,0 +1,83 @@
+name: d8_profile
+type: profile
+description: 'Drupal 8 Installation Profile'
+version: 1.0.0
+core: 8.x
+
+dependencies:
+  # Core modules
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - tour
+  - automated_cron
+
+  # Translations
+  - language
+  - locale
+  - content_translation
+  - config_translation
+
+  # Contrib modules
+  - ctools
+  - pathauto
+  - token
+  - imce
+  - webform
+  - entity_reference_revisions
+  - paragraphs
+  - admin_toolbar
+  - environment_indicator
+  - environment_indicator_ui
+  - workflow
+  - metatag
+  - field_group
+  - inline_entity_form
+  - search_api_solr
+  - cdn
+  - cdn_ui
+  - minifyhtml
+  - group
+  - svg_image
+  - crop
+  - eu_cookie_compliance
+  - devel
+  - twig_vardumper
+  - config_filter
+  - config_split
+  - chosen
+
+  # Custom modules
+
+themes:
+  - bartik
+  - seven

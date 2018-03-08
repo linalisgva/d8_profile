@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall hooks for the drupal_profile Profile install profile.
+ */
+
+use Drupal\user\Entity\User;
+use Drupal\user\Entity\Role;
+//Drupal\user\Plugin\views\access
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function drupal_profile_install() {
+
+  // First, do everything that is done in the standard profile.
+  include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
+  standard_install();
+
+  // Assign user 1 the "administrator" role.
+//  $user = User::load(1);
+//  $user->roles[] = 'administrator';
+//  $user->save();
+
+  // Create the content manager role.
+  $data = ['id' => 'contentmanager', 'label' => 'Content manager'];
+  $role = Role::create($data);
+  $role->save();
+
+  // Create the site manager role.
+  $data = ['id' => 'sitemanager', 'label' => 'Site manager'];
+  $role = Role::create($data);
+  $role->save();
+
+//  // Enable the admin theme.
+//  \Drupal::configFactory()
+//    ->getEditable('node.settings')
+//    ->set('use_admin_theme', TRUE)
+//    ->save(TRUE);
+
+  \Drupal::configFactory()
+    ->getEditable('system.site')
+    ->set('default_langcode', 'fr')
+    ->save();
+
+}
